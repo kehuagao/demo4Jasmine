@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-		'workspace/jasmine/src/**/*.js',
-		'workspace/jasmine/spec/**/*.spec.js'
+		'jasmine/src/**/*.js',
+		'jasmine/spec/**/*.spec.js'
 
     ],
 
@@ -27,10 +27,10 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-preprocessors : {'workspace/jasmine/src/myjs.js': 'coverage'},
+preprocessors : {'jasmine/src/myjs.js': 'coverage'},
 coverageReporter: {
     type : 'html',
-    dir : 'workspace/coverage/'
+    dir : 'coverage/'
 },
 
 
@@ -41,7 +41,7 @@ coverageReporter: {
     reporters: ['kjhtml','coverage','junit'],
 
     junitReporter: {
-	outputDir:'workspace/reports/',
+	outputDir:'reports/',
       outputFile: 'test-results.xml', 
     },
 
