@@ -29,7 +29,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 preprocessors : {'jasmine/src/*.js': 'coverage'},
 coverageReporter: {
-    type : 'cobertura',
+    type : 'xml',
     dir : 'coverage/'
 },
 
